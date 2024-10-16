@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>System Resource DashBoard</title>
+    <style>
+        th{
+            text-align: center;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td {
+        padding: 5px;
+        text-align: left;
+    }
+    </style>
+</head>
+<body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="myclient.js"></script>
+    
+    <table style="width:100%">
+    <tr> <td> <h2>CPU</h2> </td> <td> <h2>MEM </h2></td> </tr>
+    <tr> <td> <div id="cpu"> </div> </td> <td> <div id="memory"> </div> </td></tr>
+    </table>
+    
+</body>
+</html>
